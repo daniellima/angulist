@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>Angulist</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -38,8 +38,14 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Angulist</div>
             </div>
         </div>
+
+        <script src="{{ asset("bower_components/angular/angular.js") }}"></script>
+        <script src="{{ asset("bower_components/angular-route/angular-route.js") }}"></script>
+        <script src="{{ asset("bower_components/angular-resource/angular-resource.js") }}"></script>
+        <script src="{{ asset("bower_components/angular-animate/angular-animate.js") }}"></script>
+        <script src="{{ asset("bower_components/angular-messages/angular-messages.min.js") }}"></script>
     </body>
 </html>
