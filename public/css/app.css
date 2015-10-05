@@ -5,15 +5,27 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 96px;
     font-weight: 100;
     font-family: 'Lato';
 }
 
-.container {
-    text-align: center;
+/* login.html */
+.container .login {
+    width: 300px;
+    margin: 0 auto;
 }
 
-.title {
-    font-size: 96px;
+.login [type=submit] {
+    margin-top: 1em;
+    width: 100%;
 }

@@ -1,3 +1,28 @@
-<div>
-    <h2>Oi?</h2>
+<div class="login">
+
+    <div class="alert alert-danger" ng-show="errorMessage">
+        {{ errorMessage }}
+    </div>
+
+    <form method="post" name="loginForm" ng-submit="login()">
+
+        <div ng-class="{'has-error': !loginForm.email.$valid && loginForm.email.$touched}">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" name="email" ng-model="user.email" required>
+            <div class="help-block" ng-messages="loginForm.email.$error" ng-show="loginForm.email.$touched">
+                <div class="text-center" ng-message="required">Campo necessário</div>
+            </div>
+        </div>
+
+        <div ng-class="{'has-error': !loginForm.password.$valid && loginForm.password.$touched}">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" ng-model="user.password" required>
+
+            <div class="help-block" ng-messages="loginForm.password.$error" ng-show="loginForm.password.$touched">
+                <div class="text-center" ng-message="required">Campo necessário</div>
+            </div>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Logar">
+    </form>
 </div>

@@ -5,7 +5,7 @@ The objective is to have a pure javascript frontend and a Laravel Backed API. I 
 
 Inspiration has come from todomvc.com and the fact that I love todo lists.
 
-Features:
+## Features:
 
 - [ ] list tasks
 - [ ] add tasks
@@ -16,3 +16,12 @@ Features:
 - [ ] add due date
 - [ ] sort by due date
 - [ ] add messages to task
+
+## Problems:
+
+- CSRF token?
+- Retornar apenas as propriedades que eu quero dos objetos no laravel via AJAX
+- como user validação de formulario do angular?
+- o que é $rootScope.$apply
+- como fazer logout? 
+- tem algum tipo de middleware para angular? (para impedir de acessar uma rota por exemplo)

@@ -2,17 +2,21 @@
 <html ng-app="app">
     <head>
         <title>Angulist</title>
+        <meta charset='utf-8'>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-        <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css" />
     </head>
     <body>
         <div class="container">
             <div class="title">Angulist</div>
+            <div ng-view></div>
         </div>
-        <div ng-view></div>
 
+        <script src="{{ asset('bower_components\jquery\dist\jquery.js') }}"></script>
+        <script src="{{ asset('bower_components\bootstrap\dist\js\bootstrap.js') }}"></script>
         <script src="{{ asset('bower_components/angular/angular.js') }}"></script>
         <script src="{{ asset('bower_components/angular-route/angular-route.js') }}"></script>
         <script src="{{ asset('bower_components/angular-resource/angular-resource.js') }}"></script>

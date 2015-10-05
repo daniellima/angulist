@@ -2,7 +2,7 @@
 
 var app = angular.module('app', ['ngRoute', 'app.controllers']);
 
-angular.module('app.controllers', []);
+angular.module('app.controllers', ['ngMessages']);
 
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider

@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('app');
 });
+
+Route::post('api/v1/login', 'AuthController@postLogin');
