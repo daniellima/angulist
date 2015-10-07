@@ -1,6 +1,15 @@
 <div class="home">
+
+    <div class="input-group">
+        <input type="text" class="form-control" ng-model="newTaskName" placeholder="new task...">
+
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="add()">Add</button>
+        </span>
+    </div>
+
     <ul class="task-list">
-        <li ng-repeat="task in tasks">
+        <li class="task" ng-repeat="task in tasks">
             {{ task.name }}
         </li>
     </ul>

@@ -8,5 +8,9 @@ class Task extends Model
 {
     protected $table = 'task';
     protected $fillable = ['name'];
-    public $timestamps = false;
+
+    public function setUpdatedAtAttribute($value)
+    {
+        // By doing nothing I disable update_at column
+    }
 }
