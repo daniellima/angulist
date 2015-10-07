@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::post('api/v1/login', 'AuthController@postLogin');
+Route::get('api/v1/tasks', 'TaskController@index');

@@ -2,6 +2,8 @@ html, body {
     height: 100%;
 }
 
+* { box-sizing: border-box; }
+
 body {
     margin: 0;
     padding: 0;
@@ -16,11 +18,11 @@ body {
     text-align: center;
     font-size: 96px;
     font-weight: 100;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 /* login.html */
-.container .login {
+.login {
     width: 300px;
     margin: 0 auto;
 }
@@ -28,4 +30,18 @@ body {
 .login [type=submit] {
     margin-top: 1em;
     width: 100%;
+}
+
+/* home.html */
+.home {
+    width: 400px;
+    margin: 0 auto;
+}
+.home .task-list {
+    list-style-type: none;
+    text-align: center;
+    font-size: 3em;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }

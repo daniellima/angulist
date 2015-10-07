@@ -1,8 +1,9 @@
 /* global angular */
 
-var app = angular.module('app', ['ngRoute', 'app.controllers']);
+var app = angular.module('app', ['ngRoute', 'app.controllers', 'app.services']);
 
 angular.module('app.controllers', ['ngMessages']);
+angular.module('app.services', ['ngResource']);
 
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider
@@ -12,6 +13,6 @@ app.config(['$routeProvider', function($routeProvider){
         })
         .when('/home', {
             templateUrl: 'views/home.html',
-            controller: 'HomeController'
+            controller: 'TaskController'
         })
-}])
+}]);

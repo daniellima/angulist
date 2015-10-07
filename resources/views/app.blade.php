@@ -24,6 +24,7 @@
         <script src="{{ asset('bower_components/angular-messages/angular-messages.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{ asset('js/controllers/LoginController.js') }}"></script>
-        <script src="{{ asset('js/controllers/HomeController.js') }}"></script>
+        <script src="{{ asset('js/controllers/TaskController.js') }}"></script>
+        <script src="{{ asset('js/services/TaskService.js') }}"></script>
     </body>
 </html>

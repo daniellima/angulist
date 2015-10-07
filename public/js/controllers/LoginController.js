@@ -1,7 +1,9 @@
 /* global angular */
-
 angular.module('app.controllers')
-.controller('LoginController', ['$scope', '$location', '$rootScope', function($scope, $location, $rootScope){
+
+.controller('LoginController',
+    ['$scope', '$location', '$rootScope',
+    function($scope, $location, $rootScope){
 
     $scope.user = {
         email: '',

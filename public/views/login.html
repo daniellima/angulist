@@ -4,12 +4,12 @@
         {{ errorMessage }}
     </div>
 
-    <form method="post" name="loginForm" ng-submit="login()">
+    <form method="post" name="loginForm" novalidate ng-submit="login()">
 
         <div ng-class="{'has-error': !loginForm.email.$valid && loginForm.email.$touched}">
             <label for="email">Email:</label>
             <input type="text" class="form-control" id="email" name="email" ng-model="user.email" required>
-            <div class="help-block" ng-messages="loginForm.email.$error" ng-show="loginForm.email.$touched">
+            <div class="help-block" ng-messages="loginForm.email.$error" ng-show="!loginForm.email.$valid && loginForm.email.$touched">
                 <div class="text-center" ng-message="required">Campo necessário</div>
             </div>
         </div>
@@ -18,7 +18,7 @@
             <label for="password">Password:</label>
             <input type="password" class="form-control" id="password" name="password" ng-model="user.password" required>
 
-            <div class="help-block" ng-messages="loginForm.password.$error" ng-show="loginForm.password.$touched">
+            <div class="help-block" ng-messages="loginForm.password.$error" ng-show="!loginForm.password.$valid && loginForm.password.$touched">
                 <div class="text-center" ng-message="required">Campo necessário</div>
             </div>
         </div>

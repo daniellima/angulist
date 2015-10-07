@@ -7,6 +7,8 @@ Inspiration has come from todomvc.com and the fact that I love todo lists.
 
 ## Features:
 
+- [x] login
+- [ ] logout
 - [ ] list tasks
 - [ ] add tasks
 - [ ] mark task done
@@ -21,7 +23,10 @@ Inspiration has come from todomvc.com and the fact that I love todo lists.
 
 - CSRF token?
 - Retornar apenas as propriedades que eu quero dos objetos no laravel via AJAX
-- como user validação de formulario do angular?
+- [x] como usar validação de formulario do angular? ver o [Developer Guide](https://docs.angularjs.org/guide/forms)
 - o que é $rootScope.$apply
 - como fazer logout? 
 - tem algum tipo de middleware para angular? (para impedir de acessar uma rota por exemplo)
+- como mostrar loading?
+- mostrar informações do usuario no template
+- qual a diferença entre um serviço e um provider
